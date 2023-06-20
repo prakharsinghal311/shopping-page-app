@@ -10,8 +10,6 @@ const ProductItem = (props) => {
   const { title, price, description, id } = props;
 
   const addToCartHandler = () => {
-    //e.preventDefault();
-
     dispatch(
       cartActions.addItemToCart({
         id,
@@ -20,8 +18,6 @@ const ProductItem = (props) => {
       })
     );
   };
-
-  //console.log(useSelector((state) => state.cart.items));
 
   return (
     <li className={classes.item}>
